@@ -7,6 +7,7 @@ List of useful node packages
 A Node Web framework
 
 Usage:
+
 ``` javascript
 npm i express --save
 
@@ -25,29 +26,36 @@ app.listen(3000)
 A modern JavaScript utility library delivering modularity, performance & extras
 
 Usage:
-```
-$ npm i -g npm
-$ npm i --save lodash
+
+```bash
+npm i -g npm
+npm i --save lodash
 ```
 
 ## [Mongoose](https://www.npmjs.com/package/mongoose)
+
 MongoDB object modeling tool designed to work in an asynchronous environment
 
 Usage:
-```
-$ npm i mongoose
+
+```bash
+npm i mongoose
 ```
 
 ## [Slugify](https://www.npmjs.com/package/slugify)
+
 Create friendly url names
 
 ## [Node-geocoder](https://www.npmjs.com/package/node-geocoder)
-Add geocodes from address provided 
+
+Add geocodes from address provided
 
 ## [Express fileupload](https://www.npmjs.com/package/express-fileupload)
+
 Middleware for handling file uploads
 
 Usage:
+
 ```javascript
 npm i express-fileupload
 
@@ -57,9 +65,11 @@ app.post('/upload', function(req, res) {
 ```
 
 ## [Colors](https://www.npmjs.com/package/colors)
+
 Styling node.js console logs
 
 Usage:
+
 ```javascript
 npm i colors
 
@@ -70,6 +80,7 @@ console.log('test'.green.inverse);
 ## [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 
 Usage:
+
 ```javascript
 npm i jsonwebtoken
 
@@ -85,9 +96,11 @@ UserSchema.methods.getSignedJwtToken = function() {
 ```
 
 ## [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+
 Password hashing
 
 Usage:
+
 ```javascript
 npm i bcryptjs
 
@@ -100,6 +113,7 @@ UserSchema.pre('save', async function(next) {
 ```
 
 ## [cookie-parser](https://www.npmjs.com/package/cookie-parser)
+
 Storing/set tokens on cookies
 
 ```javascript
@@ -108,12 +122,13 @@ npm i cookie-parser
 // Cookie parser in Server.js file
 const express = require('express')
 const cookieParser = require('cookie-parser')
- 
+
 const app = express()
 app.use(cookieParser())
 ```
 
 ## [nodemailer](https://www.npmjs.com/package/nodemailer)
+
 Sending emails
 
 ```javascript
@@ -148,6 +163,7 @@ module.exports = sendEmail;
 ```
 
 ## [crypto](https://nodejs.org/api/crypto.html#crypto_determining_if_crypto_support_is_unavailable)
+
 Standard node module for cryptographic functionality (Password resets, tokens)
 
 ```javascript
@@ -160,6 +176,7 @@ const resetPasswordToken = crypto
 ```
 
 ## [passport](http://www.passportjs.org/packages/passport-google-oauth/)
+
 Authentication middleware which support username & password, Facebook and Google
 
 ```javascript
@@ -169,6 +186,7 @@ passport.authenticate('facebook')
 ```
 
 ## [react-chart.js](http://jerairrest.github.io/react-chartjs-2/)
+
 Most popular chart javascript library for bar charts, scatter charts etc
 
 ```javascript
@@ -185,6 +203,7 @@ import { Bar } from 'react-chartjs-2';
 ```
 
 ## [clipboard.js](https://clipboardjs.com/)
+
 A modern approach to copy text to clipboard
 
 ```javascript
@@ -192,13 +211,14 @@ npm install clipboard
 ```
 
 ## [puppeteer](https://pptr.dev/)
-Headless Chrome Node.js API which can be used to control Chrome or Chromium 
+
+Headless Chrome Node.js API which can be used to control Chrome or Chromium
 
 ```javascript
 // Downloads recent version of chromium (~170mb)
 npm i puppeteer
 
-//Light version which doesnt download chromium
+//Light version which doesn't download chromium
 npm i puppeteer-core
 
 const puppeteer = require('puppeteer');
@@ -214,6 +234,7 @@ const puppeteer = require('puppeteer');
 ```
 
 ## [depcheck](https://www.npmjs.com/package/depcheck)
+
 Check for unused dependencies
 
 ```bash
