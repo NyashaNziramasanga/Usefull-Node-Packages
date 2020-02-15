@@ -235,7 +235,7 @@ const puppeteer = require('puppeteer');
 
 ## [depcheck](https://www.npmjs.com/package/depcheck)
 
-Check for unused dependencies
+Check for unused npm dependencies
 
 ```bash
 npm install -g depcheck
