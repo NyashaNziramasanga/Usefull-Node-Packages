@@ -14,6 +14,7 @@ npm i express --save
 const express = require('express')
 const app = express()
 
+app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
