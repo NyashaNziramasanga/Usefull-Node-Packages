@@ -244,7 +244,7 @@ depcheck [directory] [arguments]
 ```
 
 
-## [express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize)
+## [express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize) (Security)
 
 Sanitizes user-supplied data to prevent MongoDB Operator Injection
 
@@ -264,7 +264,7 @@ npm i express-mongo-sanitize
  mongoSanitize = require('express-mongo-sanitize');
  app.use(mongoSanitize());
 ```
-## [helmet](https://www.npmjs.com/package/helmet)
+## [helmet](https://www.npmjs.com/package/helmet) (Security)
 
 Secure your Express apps by setting various HTTP headers
 
@@ -277,7 +277,7 @@ npm i helmet
 const helmet = require('helmet')
 app.use(helmet())
  ```
- ## [xss-clean](https://www.npmjs.com/package/xss-clean)
+## [xss-clean](https://www.npmjs.com/package/xss-clean) (Security)
 
 Middleware to sanitize user input coming from POST body, GET queries, and url params
 
@@ -289,4 +289,25 @@ npm i xss-clean
 //Usage
 const xss = require('xss-clean')
 app.use(xss())
+ ```
+ 
+## [express-rate-limit](https://www.npmjs.com/package/express-rate-limit) (Security)
+
+Basic rate-limiting middleware for Express. Used to limit repeated requests to public APIs 
+
+```bash
+npm i express-rate-limit
+```
+
+```javascript
+//Usage
+const rateLimit = require("express-rate-limit");
+  
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100 // limit each IP to 100 requests per windowMs
+});
+ 
+//  apply to all requests
+app.use(limiter);
  ```
