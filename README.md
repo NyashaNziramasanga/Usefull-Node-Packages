@@ -264,3 +264,16 @@ npm i express-mongo-sanitize
  mongoSanitize = require('express-mongo-sanitize');
  app.use(mongoSanitize());
 ```
+## [helmet](https://www.npmjs.com/package/helmet)
+
+Secure your Express apps by setting various HTTP headers
+
+```bash
+npm i helmet
+```
+
+```javascript
+//Usage
+const helmet = require('helmet')
+app.use(helmet())
+ ```
