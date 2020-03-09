@@ -311,3 +311,16 @@ const limiter = rateLimit({
 //  apply to all requests
 app.use(limiter);
  ```
+ ## [hpp](https://www.npmjs.com/package/hpp) (Security)
+
+Middleware to protect against HTTP Parameter Pollution attacks
+
+```bash
+npm i hpp
+```
+
+```javascript
+//Usage
+const hpp = require('hpp');
+app.use(hpp());
+ ```
