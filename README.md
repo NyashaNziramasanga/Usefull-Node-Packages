@@ -324,3 +324,17 @@ npm i hpp
 const hpp = require('hpp');
 app.use(hpp());
  ```
+ 
+## [cors](https://www.npmjs.com/package/cors)
+
+middleware that can be used to enable CORS with various options
+
+```bash
+npm i cors
+```
+
+```javascript
+//Usage
+const cors = require('cors');
+app.use(cors());
+ ```
