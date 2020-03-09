@@ -277,3 +277,16 @@ npm i helmet
 const helmet = require('helmet')
 app.use(helmet())
  ```
+ ## [xss-clean](https://www.npmjs.com/package/xss-clean)
+
+Middleware to sanitize user input coming from POST body, GET queries, and url params
+
+```bash
+npm i xss-clean
+```
+
+```javascript
+//Usage
+const xss = require('xss-clean')
+app.use(xss())
+ ```
