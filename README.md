@@ -242,3 +242,25 @@ npm install -g depcheck
 
 depcheck [directory] [arguments]
 ```
+
+
+## [express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize)
+
+Sanitizes user-supplied data to prevent MongoDB Operator Injection
+
+```bash
+npm i express-mongo-sanitize
+```
+```javascript
+// Example Vulneralbility
+{
+    "email":{"$gt":""},
+    "password": "123456"
+}
+```
+
+```javascript
+//Usage
+ mongoSanitize = require('express-mongo-sanitize');
+ app.use(mongoSanitize());
+```
